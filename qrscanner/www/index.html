@@ -47,6 +47,10 @@
         document.addEventListener('deviceready', onDeviceReady, false);
 
         function onDeviceReady() {
+            play();
+        }
+
+        function play(deviceId, HDUnsupported){
             var constraints;
             var platform = window.device.platform;
             if (platform = "browser") {

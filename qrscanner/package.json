@@ -17,7 +17,8 @@
     "cordova-browser": "^6.0.0",
     "cordova-custom-config": "^5.1.1",
     "cordova-ios": "^6.2.0",
-    "cordova-plugin-device": "^2.0.3"
+    "cordova-plugin-device": "^2.0.3",
+    "cordova-plugin-iosrtc": "^8.0.1"
   },
   "cordova": {
     "platforms": [
@@ -27,7 +28,10 @@
     ],
     "plugins": {
       "cordova-plugin-device": {},
-      "cordova-custom-config": {}
+      "cordova-custom-config": {},
+      "cordova-plugin-iosrtc": {
+        "MANUAL_INIT_AUDIO_DEVICE": "FALSE"
+      }
     }
   }
 }
